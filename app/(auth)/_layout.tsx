@@ -3,7 +3,7 @@ import { Redirect, Stack } from "expo-router"
 export default function UnAuthenticatedLayout(){
     const{isSignedIn}=useAuth()
     if(isSignedIn){
-        return<Redirect href={'/'}/>
+        return <Redirect href={'/'}/>
     }
     return <Stack/>
 }
